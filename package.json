@@ -4,6 +4,10 @@
     "displayName": "Centrallix Syntax Highlighting",
     "description": "Syntax highlighting for Centrallix structure files",
     "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sheesania/centrallix-syntax-highlighting.git"
+    },
     "engines": {
         "vscode": "^1.56.0"
     },
