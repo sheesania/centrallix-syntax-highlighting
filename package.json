@@ -1,0 +1,25 @@
+{
+    "name": "centrallix-syntax-highlighting",
+    "displayName": "Centrallix Syntax Highlighting",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "centrallix",
+            "aliases": ["Centrallix", "centrallix"],
+            "extensions": [".cmp", ".qy", ".qyt", ".app", ".rpt", ".spec", ".struct"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "centrallix",
+            "scopeName": "source.centrallix",
+            "path": "./syntaxes/centrallix.tmLanguage.json"
+        }]
+    }
+}
