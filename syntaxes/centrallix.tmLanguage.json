@@ -9,6 +9,9 @@
 			"include": "#functions"
 		},
 		{
+			"include": "#numbers"
+		},
+		{
 			"include": "#strings"
 		}
 	],
@@ -20,6 +23,10 @@
 		"functions": {
 			"name": "entity.name.function.centrallix",
 			"match": "\\b(runserver|runclient|runstatic|abs|ascii|avg|charindex|char_length|condition|convert|count|dateadd|datediff|datepart|escape|eval|first|getdate|isnull|last|lower|ltrim|lztrim|max|min|quote|ralign|replicate|right|round|rtrim|substring|sum|upper|user_name|wordify)\\b"
+		},
+		"numbers": {
+			"name": "constant.numeric.centrallix",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
 		},
 		"strings": {
 			"patterns": [
