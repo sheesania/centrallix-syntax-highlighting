@@ -13,6 +13,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -41,6 +44,10 @@
 					"end": "'"
 				}
 			]
+		},
+		"comments": {
+			"name": "comment.line.double-slash.centrallix",
+			"match": "//.*$"
 		}
 	},
 	"scopeName": "source.centrallix"
