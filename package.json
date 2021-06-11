@@ -10,19 +10,32 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "centrallix",
-            "aliases": ["Centrallix", "centrallix"],
-            "extensions": [".cmp", ".qy", ".qyt", ".app", ".rpt", ".spec", ".struct"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "centrallix",
-            "scopeName": "source.centrallix",
-            "embeddedLanguages": {
-                "meta.embedded.block.cxsql": "sql"
+        "languages": [
+            {
+                "id": "centrallix",
+                "aliases": ["Centrallix", "centrallix"],
+                "extensions": [".cmp", ".qy", ".qyt", ".app", ".rpt", ".spec", ".struct"],
+                "configuration": "./language-configuration.json"
             },
-            "path": "./syntaxes/centrallix.tmLanguage.json"
-        }]
+            {
+                "id": "cxsql",
+                "aliases": ["Centrallix SQL"]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "cxsql",
+                "scopeName": "source.cxsql",
+                "path": "./syntaxes/cxsql.tmLanguage.json"
+            },
+            {
+                "language": "centrallix",
+                "scopeName": "source.centrallix",
+                "embeddedLanguages": {
+                    "meta.embedded.block.cxsql": "cxsql"
+                },
+                "path": "./syntaxes/centrallix.tmLanguage.json"
+            }
+        ]
     }
 }

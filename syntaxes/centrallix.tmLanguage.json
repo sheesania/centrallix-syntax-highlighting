@@ -37,7 +37,12 @@
 		"embedded-cxsql": {
 			"contentName": "meta.embedded.block.cxsql",
 			"begin": "sql\\s*=\\s*\"",
-			"end": "\""
+			"end": "\"",
+			"patterns": [
+				{
+					"include": "source.cxsql"
+				}
+			]
 		},
 		"strings": {
 			"patterns": [
