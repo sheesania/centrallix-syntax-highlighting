@@ -9,12 +9,14 @@
     "autoClosingPairs": [
         ["{", "}"],
         ["(", ")"],
-        ["\"", "\""]
+        ["\"", "\""],
+        ["'", "'"]
     ],
     "surroundingPairs": [
         ["{", "}"],
         ["(", ")"],
         ["\"", "\""],
+        ["'", "'"]
     ]
     // TODO: indentationRules/onEnterRules
 }
