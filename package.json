@@ -19,6 +19,9 @@
         "grammars": [{
             "language": "centrallix",
             "scopeName": "source.centrallix",
+            "embeddedLanguages": {
+                "meta.embedded.block.cxsql": "sql"
+            },
             "path": "./syntaxes/centrallix.tmLanguage.json"
         }]
     }

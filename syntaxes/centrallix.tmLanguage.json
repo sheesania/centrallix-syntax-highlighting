@@ -12,6 +12,9 @@
 			"include": "#numbers"
 		},
 		{
+			"include": "#embedded-cxsql"
+		},
+		{
 			"include": "#strings"
 		},
 		{
@@ -30,6 +33,11 @@
 		"numbers": {
 			"name": "constant.numeric.centrallix",
 			"match": "\\b\\d+(\\.\\d+)?\\b"
+		},
+		"embedded-cxsql": {
+			"contentName": "meta.embedded.block.cxsql",
+			"begin": "sql\\s*=\\s*\"",
+			"end": "\""
 		},
 		"strings": {
 			"patterns": [
