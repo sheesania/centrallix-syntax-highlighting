@@ -1,8 +1,9 @@
 {
     "name": "centrallix-syntax-highlighting",
+    "publisher": "lightsys",
     "displayName": "Centrallix Syntax Highlighting",
-    "description": "",
-    "version": "0.0.1",
+    "description": "Syntax highlighting for Centrallix structure files",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.56.0"
     },
