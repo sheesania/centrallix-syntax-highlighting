@@ -3,27 +3,28 @@
 	"name": "Centrallix",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#variable-keywords"
 		},
 		{
 			"include": "#strings"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.centrallix",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+		"variable-keywords": {
+			"name": "entity.other.attribute-name.centrallix",
+			"match": "\\b(width|height)\\b"
 		},
 		"strings": {
-			"name": "string.quoted.double.centrallix",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.centrallix",
-					"match": "\\\\."
+					"name": "string.quoted.double.centrallix",
+					"begin": "\"",
+					"end": "\""
+				},
+				{
+					"name": "string.quoted.single.centrallix",
+					"begin": "'",
+					"end": "'"
 				}
 			]
 		}
